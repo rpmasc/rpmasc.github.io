@@ -15,10 +15,20 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/rpm_demo/">
-
+  
+<title>RPM Arts & Science College</title>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+
+
+<meta name="description"
+content="Official Website of R.Parameswaran Pillai Memorial Arts and Science College,Kerala">
+
+<meta name="keywords"
+content="R.Parameswaran Pillai Memorial Arts and Science College Kerala, Arts and Science College">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -33,6 +43,17 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+  (function () {
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
   <script src="flutter_bootstrap.js" async></script>
+  
 </body>
 </html>
